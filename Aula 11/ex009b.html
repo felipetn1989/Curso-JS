@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Departamento de Passaporte</h1>
+    Nacionalidade: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="nacionalidade"></div>
+    <script>
+        function verificar (){
+            var tnac = window.document.getElementById('nac')
+            var res = window.document.querySelector('div#nacionalidade')
+            var nac = tnac.value
+            res.innerHTML = `Você nasceu no país: ${nac}</br>` 
+            if (nac == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro`
+            } else {
+                res.innerHTML += `Você é Estrangeiro`
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

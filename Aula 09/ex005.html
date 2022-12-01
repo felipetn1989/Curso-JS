@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background: rgb(29, 42, 163);
+            color: white;
+            font: normal 18pt arial;           
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div> <!-- coloquei uma ID para diferenciá-la; posso colocar <div name="msg" tbm 
+    ou entao <div class="msg "-->   
+    <script>
+        /*linha abaixo segue a ordem da árvore DOM
+        window.document.write ('Olá, Mundo!') */
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName ('p')[1] //indica que quero selecionar o primeiro <p>
+
+        // obs: se o comando é Elements no plural, adicionar colchete
+
+        //var d = window.document.getElementById ('msg')
+        //window.document.write (p1.innerText) //observar que selecionando [1] esse comando não pega o negrito
+        window.document.write (p1.innerHTML)
+        p1.style.color = 'red'
+        corpo.style.background = 'black' //semelhante a mudar cor de fundo do google
+        // d.innerText = ('Estou aguardando...') //Forma Simplificada
+        //window.document.getElementById('msg').innerText = ('Estou Aguardando...') 
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'green'
+
+
+
+
+
+
+    </script>
+</body> 
+</html>

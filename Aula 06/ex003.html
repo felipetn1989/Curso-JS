@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgba(62, 97, 138, 0.781);
+            color: white; /* Comentário em CSS */
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color:rgba(255, 255, 0, 0.658)
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--Comentário em HTML-->
+    <p> Já me livrei da maldição</p> 
+    <script>
+        var n1 = window.prompt ('Digite o primeiro número')// No prompt n1 e n2 recebem valor 'string'
+        var n2 = window.prompt ('Digite o segundo número')
+        var soma = Number.parseInt(n1) + Number.parseInt (n2) //converter de string para number
+        // + pode servir pra concatenação ou adição, devo definir
+        // (number + number) para adição
+        // (string + string) para concatenação
+        window.alert ('A soma entre ' + n1 +' e ' + n2 + ' é igual a ' + soma) //concatenação
+        window.alert (`A soma entre ${n1} e ${n2} é igual a ${soma}`)  //template string com crase
+    </script>  
+</body>
+</html>
