@@ -7,14 +7,45 @@
     <title>Locadora de Veículos</title>
 </head>
 <body>
-    <h1>
-        Cotação de Aluguel
-    </h1>
-    
-    <input type="number" name="fkm" id="fkm">
-    
-    <input type="button" value="calcular" onclick="calcular()">
-    
-    <script src="script.js"></script>
+    <header>
+        <h1>
+            Locadora de Veículos
+        </h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Frota</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Cotação de aluguel
+        </h1>
+        <h2>
+            Preencha os dados abaixo para obter sua Cotação
+        </h2>
+        <form name="myForm">
+            Carro escolhido: 
+            <select name="mySelect" id="mySelect">
+                <option value="0">--Selecione o tipo de veículo</option>
+                <option value="1">Carro popular</option>
+                <option value="2">Carro de luxo</option>
+            </select>
+        </form>
+        <p>
+            Diárias contratadas: <input type="number" name="fdias" id="fdias">
+        </p>
+        <p>
+            Kms rodados: <input type="number" name="fkm" id="fkm"> Km
+        </p>
+        <input type="button" value="Calcular Cotação" onclick="calcular ()">
+        <div id="resultado">
+
+        </div>
+    </main>
+    <footer>
+        Site locadora de veículos &copy;
+    </footer>
 </body>
 </html>
+<script src="script.js"></script>
