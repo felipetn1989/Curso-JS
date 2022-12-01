@@ -1,25 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+:root {
+    --cor0 : #B5FFCD;
+    --cor1 : #A5E8A7;
+    --cor2 : #D4FFC1;
+    --cor3 : #D0E8A5;
+    --cor4 : #FFFFB5;
+
+    --fontedestaque : 'Josefin Sans', sans-serif;
+    --fonte-base : Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background: rgb(54, 54, 196);
-    font: normal 15pt Arial;
+    background-color: var(--cor1);
 }
 
 header {
+    font-family: var(--fontedestaque);
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.329);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 3em;
+}
+
+nav {
+    font-family: var(--fonte-base);
+    padding: 15px;
+}
+
+nav > a {
+    text-decoration: none;
     color: white;
+    font-weight: bolder;
+    margin-right: 30px;
+    margin-left: 15px;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: black;
+    padding: 10px;
+    transition-duration: .5s;
+    border-radius: 10px;
+}
+
+main {
+    background-color: #c9b5ff85;
+    min-width: 350px;
+    max-width: 800px;
+    margin: auto;
+    font-family: var(--fonte-base);
     text-align: center;
 }
 
-section {
-    background: white;
-    border-radius: 10px;
+main > h1, h2 {
+    padding: 20px;
+}
+
+main p, form {
     padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+}
+
+input#butcalc {
+    margin-bottom: 15px;
 }
 
 footer {
-    color: white;
+    background-color: var(--cor4);
     text-align: center;
-    font-style: italic;
+    font-family: var(--fonte-base);
+    font-weight: bold;
+    padding: 10px;
 }
+
 

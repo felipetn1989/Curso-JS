@@ -6,6 +6,9 @@ function calcular() {
     var select = document.myForm.mySelect.selectedIndex
     var km = Number (fkm.value)
     var dias = Number (fdias.value)
+    var foto = document.createElement('img')
+
+    resultado.innerHTML = ('')
 
     if (fkm.value.length == 0 || select == 0 || fdias.value.length ==0) {
         alert('Preencha todos os dados e tente novamente')
@@ -20,6 +23,8 @@ function calcular() {
         } else {
             var kmcost = 0.10
         }
+        foto.setAttribute ('src','imagens/carro-pop-pq.png')
+        
     } else {
         var diaria = 150
         if (km <= 200) {
@@ -27,8 +32,13 @@ function calcular() {
         } else {
             var kmcost = 0.25
         }
+        foto.setAttribute ('src','./imagens/carro-luxo-pq.png')
     }
    
     var rentalprice = (dias*diaria) + (km*kmcost)
-    alert(rentalprice)
+
+    var fprice = document.createElement('p')
+    fprice.innerHTML = (`O valor total da locação é de R$${rentalprice.toFixed(2)}`)
+    resultado.appendChild (fprice)
+    resultado.appendChild (foto)
 }
