@@ -25,21 +25,24 @@
         <h2>
             Preencha os dados abaixo para obter sua Cotação
         </h2>
-        <form name="myForm">
-            Carro escolhido: 
-            <select name="mySelect" id="mySelect">
-                <option value="0">--Selecione o tipo de veículo</option>
-                <option value="1">Carro popular</option>
-                <option value="2">Carro de luxo</option>
-            </select>
-        </form>
-        <p>
-            Diárias contratadas: <input type="number" name="fdias" id="fdias">
-        </p>
-        <p>
-            Kms rodados: <input type="number" name="fkm" id="fkm"> Km
-        </p>
+        <div class="dados">
+            <form name="myForm">
+                Carro escolhido: 
+                <select name="mySelect" id="mySelect">
+                    <option value="0">--Selecione o tipo de veículo</option>
+                    <option value="1">Carro popular</option>
+                    <option value="2">Carro de luxo</option>
+                </select>
+            </form>
+            
+                Diárias contratadas: <input type="number" name="fdias" id="fdias" class="inpnum">
+            
+            
+                Kms rodados: <input type="number" name="fkm" id="fkm" class="inpnum"> Km
+        </div>
+        
         <input type="button" value="Calcular Cotação" id="butcalc" onclick="calcular ()">
+
         <div id="resultado">
 
         </div>

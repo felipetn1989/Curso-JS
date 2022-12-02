@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
 
 :root {
-    --cor0 : #B5FFCD;
-    --cor1 : #A5E8A7;
-    --cor2 : #D4FFC1;
-    --cor3 : #D0E8A5;
-    --cor4 : #FFFFB5;
+    --cor0 : #1B337A;
+    --cor1 : #82A0FB;
+    --cor2 : #3768FA;
+    --cor3 : #404E7A;
+    --cor4 : #2C53C7;
 
     --fontedestaque : 'Josefin Sans', sans-serif;
     --fonte-base : Arial, Verdana, Helvetica, sans-serif;
@@ -57,7 +57,7 @@ nav > a:hover {
 }
 
 main {
-    background-color: #c9b5ff85;
+    background-color: var(--cor1);
     min-width: 350px;
     max-width: 800px;
     margin: auto;
@@ -73,12 +73,25 @@ main p, form {
     padding: 15px;
 }
 
+.dados {
+    background-color: white;
+    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px black;
+}
+
+#fdias, #fkm {
+    width: 50px;
+}
+
 input#butcalc {
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 footer {
-    background-color: var(--cor4);
+    background-color: var(--cor0);
     text-align: center;
     font-family: var(--fonte-base);
     font-weight: bold;
