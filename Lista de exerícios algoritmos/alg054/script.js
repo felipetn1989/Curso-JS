@@ -6,7 +6,7 @@ var altpeso = []
 
 function add () {
 
-    for (var c = 1; c >= 7; c++) {
+    for (var c = 1; c <= 7; c++) {
         if (falt.value.length != 0 && fpeso.value.length != 0) {
             var alt = Number(falt.value)
             var peso = Number(fpeso.value)
@@ -20,7 +20,7 @@ function add () {
             fpeso.value = ('')
             
             falt.focus()
-        }
+        } 
     }
 }
 
