@@ -12,21 +12,20 @@
         <h1>Somatório</h1>
     </header>
     <section>
-        <form>
+        <form method="post" autocomplete="off">
             <p>
                 <label for="n1">Digite um valor:</label> 
-                <input type="number" name="n1" id="n1" required>
+                <input type="number" name="n1" id="n1" required oninput="somar()">
             </p>
             <p>
                 <label for="n2">Digite outro valor: </label>
-                <input type="number" name="n2" id="n2" required>
+                <input type="number" name="n2" id="n2" required oninput="somar()">
             </p>
+
+            <label for="isoma">Soma: </label>
+            <output id="isoma">0</output>
         </form>
 
-            <input type="button" value="Somar" onclick="somar()">
-        <div id="resultado">
-            
-        </div>
     </section>
     <footer>
         <p>&copy; CursoEmVídeo</p>
